@@ -257,3 +257,166 @@ section[id]{scroll-margin-top:68px}
 @media(min-width:1001px){
   .product-stage{height:280px;margin-top:0}
 }
+
+/* Final presentation cleanup */
+body.modal-open{overflow:hidden}
+.dialog-copy .dialog-overline{font-size:.6rem;text-transform:uppercase;letter-spacing:.15em;color:#6a776d}
+
+.product-stage{
+  width:100%;
+  height:auto;
+  aspect-ratio:1671/941;
+  margin:0;
+  overflow:hidden;
+  background:transparent;
+  box-shadow:0 26px 60px rgba(45,55,35,.15);
+}
+.product-stage:before,.product-stage:after{content:none}
+.product-stage img{
+  position:static;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  filter:none;
+  transform:none;
+}
+
+.influencer-image img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center;
+}
+.footer-bottom{justify-content:flex-end}
+.footer-bottom nav{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+.footer-bottom button{border:0;background:none;padding:0;color:#47584f;font:inherit;cursor:pointer}
+
+#content-dialog.newsletter-dialog{
+  width:min(860px,calc(100vw - 1.5rem));
+  height:min(94svh,1120px);
+  max-height:94svh;
+  overflow:hidden;
+  background:#f7f1e6;
+}
+#content-dialog.newsletter-dialog .dialog-close{
+  position:fixed;
+  right:max(calc((100vw - 860px)/2 + 1rem),1.25rem);
+  top:calc(3svh + 1rem);
+  background:rgba(249,245,236,.94);
+  color:#1e382c;
+  border-color:rgba(30,56,44,.45);
+  backdrop-filter:blur(8px);
+}
+#content-dialog.newsletter-dialog #dialog-body{
+  height:100%;
+  overflow-y:auto;
+  overscroll-behavior:contain;
+  scrollbar-color:#748066 #f1e9dc;
+}
+.newsletter-preview{
+  --mail-ink:#1d3428;
+  --mail-olive:#536044;
+  --mail-gold:#b38a4b;
+  color:var(--mail-ink);
+  background:#f8f2e7;
+  font-family:var(--sans);
+}
+.mail-header{
+  min-height:104px;
+  padding:1.2rem 2.2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  background:linear-gradient(115deg,#596548,#303f31);
+}
+.mail-brand{display:flex;flex-direction:column;align-items:center;gap:.05rem}
+.mail-brand img{width:210px;height:58px;object-fit:contain;transform:scale(1.22)}
+.mail-brand span,.mail-header>p,.mail-subtitle{
+  text-transform:uppercase;
+  letter-spacing:.34em;
+  font-size:.58rem;
+}
+.mail-header>p{margin:0;padding-left:1.2rem;border-left:1px solid rgba(255,255,255,.5);line-height:1.65}
+.mail-header>p span{font-size:1.2rem;float:left;margin:.3rem .55rem 0 0}
+.mail-hero{height:250px;position:relative;overflow:hidden;background:#a8a083}
+.mail-hero img{width:100%;height:100%;object-fit:cover;object-position:center 56%}
+.mail-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,37,28,.58),transparent 55%)}
+.mail-hero p{position:absolute;z-index:1;left:2.5rem;top:50%;transform:translateY(-50%);margin:0;color:#fff;text-transform:uppercase;letter-spacing:.3em;font-size:.62rem;line-height:1.7}
+.mail-welcome{padding:2.8rem 3rem 2rem;text-align:center;position:relative}
+.mail-recipient{margin:0 0 .65rem;text-transform:uppercase;letter-spacing:.18em;font-size:.55rem;color:#778173}
+.mail-welcome h2{font:400 clamp(2.5rem,6vw,4.2rem)/1 var(--display);letter-spacing:-.045em;margin:0}
+.mail-rule{width:52px;height:2px;background:var(--mail-gold);margin:1rem auto}
+.mail-subtitle{margin:0;color:#2c4035}
+.mail-intro{text-align:left;margin:2rem auto 0;max-width:690px}
+.mail-intro h3{font:400 1.8rem var(--display);margin:0 0 .25rem}
+.mail-intro p{margin:0;line-height:1.55;font-size:.86rem}
+.mail-routine{padding:0 1.6rem 1.2rem}
+.mail-section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:2rem;padding:0 1.4rem 1rem}
+.mail-section-title small,.mail-tip small{display:block;text-transform:uppercase;letter-spacing:.3em;font-size:.56rem}
+.mail-section-title h3,.mail-tip h3{font:400 2.65rem/1 var(--display);margin:.15rem 0 0}
+.mail-section-title>p{max-width:260px;margin:0 0 .2rem;text-transform:uppercase;letter-spacing:.28em;font-size:.53rem;line-height:1.55}
+.routine-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.routine-grid article{padding:1.4rem 1.6rem;background:linear-gradient(135deg,#f2e4c9,#f9f2e8);min-height:220px}
+.routine-grid article:nth-child(2){background:linear-gradient(135deg,#e6ead8,#f6f2e6)}
+.routine-number{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;padding-bottom:1rem;border-bottom:1px solid rgba(52,71,57,.18)}
+.routine-number b{font:400 2.2rem var(--display)}
+.routine-number span{text-transform:uppercase;letter-spacing:.25em;font-size:.58rem}
+.routine-number i{font:400 1.6rem var(--display)}
+.routine-grid ul{list-style:none;padding:0;margin:1rem 0 0}
+.routine-grid li{position:relative;padding:.35rem 0 .35rem 1.7rem;font-size:.8rem}
+.routine-grid li:before{content:"♧";position:absolute;left:0;color:#9c753d;font-size:1.1rem}
+.mail-tip{margin:0 1.6rem 1.5rem;min-height:150px;display:grid;grid-template-columns:42% 1fr auto;align-items:center;background:linear-gradient(90deg,#dbe2ce,#f1eedf);overflow:hidden}
+.mail-tip>img{height:100%;min-height:150px;object-fit:cover}
+.mail-tip>div{padding:1.4rem 1.8rem}
+.mail-tip h3{font-size:2.25rem}
+.mail-tip p{font-size:.74rem;line-height:1.5}
+.leaf-mark{font:400 3.2rem var(--display);padding-right:1.3rem;transform:rotate(-25deg)}
+.mail-outlook{padding:0 2rem 2rem;text-align:center}
+.outlook-grid{display:grid;grid-template-columns:repeat(3,1fr);margin:1.2rem 0 1.5rem}
+.outlook-grid article{padding:0 1.1rem;border-right:1px solid rgba(51,71,57,.25)}
+.outlook-grid article:last-child{border:0}
+.outlook-grid span{display:grid;place-items:center;width:54px;height:54px;margin:0 auto .5rem;border-radius:50%;background:#eee7d8;font-size:1.45rem}
+.outlook-grid h3{font:400 1.15rem/1.15 var(--display);margin:.4rem 0}
+.outlook-grid p{font-size:.65rem;line-height:1.4;margin:.4rem 0}
+.mail-cta{min-width:330px;margin:.2rem auto 0;background:#586247;border-color:#586247}
+.mail-footer{min-height:125px;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#f7efe1,#edf0df)}
+.mail-footer>p{text-align:left;font-size:.76rem}
+.mail-footer>p i{font:400 1.35rem var(--display)}
+.mail-footer>div{display:flex;flex-direction:column;align-items:center}
+.mail-footer img{width:160px;transform:scale(1.15)}
+.mail-footer span{text-transform:uppercase;letter-spacing:.28em;font-size:.48rem}
+
+@media(max-width:650px){
+  .product-stage{height:auto;aspect-ratio:1671/941}
+  .influencer-image img{height:auto}
+  #content-dialog.newsletter-dialog{width:calc(100vw - .75rem);height:96svh;max-height:96svh}
+  #content-dialog.newsletter-dialog .dialog-close{right:.8rem;top:calc(2svh + .6rem);width:38px;height:38px}
+  .mail-header{padding:1rem 1.1rem;min-height:86px}
+  .mail-brand img{width:150px;height:46px}
+  .mail-brand span{font-size:.43rem;letter-spacing:.22em}
+  .mail-header>p{font-size:.46rem;padding-left:.7rem;letter-spacing:.2em}
+  .mail-hero{height:190px}
+  .mail-hero p{left:1.2rem;font-size:.5rem}
+  .mail-welcome{padding:2rem 1.25rem 1.5rem}
+  .mail-welcome h2{font-size:2.45rem}
+  .mail-intro{margin-top:1.35rem}
+  .mail-intro h3{font-size:1.5rem}
+  .mail-intro p{font-size:.76rem}
+  .mail-section-title{align-items:flex-start;padding:0 0 1rem;flex-direction:column;gap:.5rem}
+  .mail-section-title h3{font-size:2.25rem}
+  .routine-grid{grid-template-columns:1fr}
+  .routine-grid article{min-height:0}
+  .mail-tip{grid-template-columns:1fr;margin:0 1.25rem 1.5rem}
+  .mail-tip>img{height:150px}
+  .mail-tip>div{padding:1.2rem}
+  .leaf-mark{display:none}
+  .mail-outlook{padding:0 1.25rem 1.5rem}
+  .outlook-grid{grid-template-columns:1fr}
+  .outlook-grid article{border-right:0;border-bottom:1px solid rgba(51,71,57,.2);padding:1rem 0}
+  .outlook-grid article:last-child{border-bottom:0}
+  .mail-cta{min-width:0;width:100%}
+  .mail-footer{padding:1.2rem;gap:1rem}
+  .mail-footer img{width:120px}
+}
