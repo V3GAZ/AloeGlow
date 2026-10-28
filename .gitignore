@@ -1,0 +1,13 @@
+
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+Masterbilder/
+Mockupbilder/
+Zusatzbilder/
+AloeGlow_Desktop_*.jpg
+AloeGlow_Codex_Masterbriefing.md

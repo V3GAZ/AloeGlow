@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AloeGlow – natürliche Hautpflege und die Kampagne The Glow Movement.">
+  <title>AloeGlow — Your Natural Glow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=6">
+  <script defer src="app.js?v=6"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="AloeGlow Startseite">
+      <img class="brand-light" src="assets/logo-light.png" alt="AloeGlow Logo">
+      <img class="brand-dark" src="assets/logo-dark.png" alt="" aria-hidden="true">
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>Menü</b></button>
+    <nav id="main-nav" aria-label="Hauptnavigation">
+      <a href="#produkte">Produkte</a><a href="#philosophie">Über uns</a><a href="#inhaltsstoffe">Inhaltsstoffe</a><a href="#kampagne">Journal</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="header-tools" aria-label="Schnellzugriff">
+      <button type="button" data-header-tool="search" aria-label="Suche öffnen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button type="button" data-header-tool="account" aria-label="Konto öffnen"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.8 21c.5-4.3 3-6.5 7.2-6.5s6.7 2.2 7.2 6.5"/></svg></button>
+      <button type="button" data-header-tool="bag" aria-label="Warenkorb öffnen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l-1 12H6l-1-12Z"/><path d="M9 9V6.5a3 3 0 0 1 6 0V9"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero-v3.png" alt="Frau mit leuchtender Haut neben einem großen, nassen Aloe-Vera-Blatt">
+      <div class="hero-shade"></div>
+      <div class="hero-copy reveal">
+        <p class="hero-kicker" aria-label="Natural beauty. Real results."><span>Natural</span><span>Beauty</span><i></i><span>Real</span><span>Results.</span></p>
+        <h1 id="hero-title">AloeGlow</h1>
+        <p class="claim">Your Natural Glow.</p>
+        <p class="hero-lead">Natürliche Pflege. Sichtbare Ergebnisse.<br>Für eine gesunde, strahlende Haut – jeden Tag.</p>
+        <a class="button button-light" href="#produkte">Jetzt entdecken <span>→</span></a>
+      </div>
+      <p class="hero-credits">George · Tom · Sophie · Erik</p>
+      <p class="scroll-cue" aria-hidden="true">Scroll to glow <span></span></p>
+    </section>
+
+    <section class="products section cream" id="produkte" aria-labelledby="products-title">
+      <div class="products-intro reveal">
+        <p class="eyebrow">Unsere Produkte</p>
+        <h2 id="products-title">Reine Natur.<br>Echte Ergebnisse.</h2>
+        <p>Entdecke unsere aufeinander abgestimmte AloeGlow-Pflegewelt – inspiriert von der Aloe Vera und gestaltet für bewusste Pflegeroutinen.</p>
+        <button class="text-link" data-scroll-products>Alle Produkte <span>→</span></button>
+      </div>
+      <div class="product-stage reveal" aria-label="AloeGlow Pflegeprodukte aus den Original-Produktassets">
+        <div class="product-leaf" aria-hidden="true"></div>
+        <img class="stage-day" src="assets/product-day.png" alt="AloeGlow Day Cream">
+        <img class="stage-serum" src="assets/product-serum.png" alt="AloeGlow Face Serum">
+        <img class="stage-cleanser" src="assets/product-cleanser.png" alt="AloeGlow Gentle Cleanser">
+        <img class="stage-night" src="assets/product-night.png" alt="AloeGlow Night Cream">
+        <span class="stage-note">AloeGlow Essentials</span>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <button class="product-card reveal" data-product="day"><span>01</span><h3>Day Cream</h3><p>Ein sanfter Start in den Tag.</p><b>Details ansehen ↗</b></button>
+        <button class="product-card reveal" data-product="serum"><span>02</span><h3>Face Serum</h3><p>Ein leichter Pflegemoment für deine Routine.</p><b>Details ansehen ↗</b></button>
+        <button class="product-card featured reveal" data-product="cleanser"><span>03</span><h3>Gentle Cleanser</h3><p>Frische für den Beginn deines Pflegerituals.</p><b>Details ansehen ↗</b></button>
+        <button class="product-card reveal" data-product="night"><span>04</span><h3>Night Cream</h3><p>Ein entspannter Abschluss für deinen Abend.</p><b>Details ansehen ↗</b></button>
+      </div>
+      <div class="value-strip" aria-label="Markenwerte"><span>✦ Aloe-Vera-inspiriert</span><span>○ Bewusste Pflege</span><span>◇ Hochwertige Ästhetik</span><span>☼ Dein natürlicher Glow</span></div>
+    </section>
+
+    <section class="editorial" id="inhaltsstoffe" aria-labelledby="philosophy-title">
+      <figure class="editorial-image reveal"><img src="assets/aloe-macro.png" alt="Aloe Vera im goldenen Morgenlicht" loading="lazy"></figure>
+      <div class="editorial-copy dark reveal" id="philosophie">
+        <p class="eyebrow">Unsere Philosophie</p><h2 id="philosophy-title">Die Kraft der<br>Aloe Vera.</h2>
+        <p>AloeGlow verbindet die Inspiration der Natur mit einer modernen, hochwertigen Pflegeroutine. Im Mittelpunkt stehen bewusste Pflege, klare Gestaltung und ein gutes Gefühl in der eigenen Haut.</p>
+        <div class="word-row"><span>Natürlichkeit</span><span>Qualität</span><span>Selbstbewusstsein</span><span>Moderne</span></div>
+      </div>
+      <figure class="editorial-image skin reveal"><img src="assets/skin-detail.png" alt="Nahaufnahme einer gepflegten Hautpartie" loading="lazy"></figure>
+      <div class="editorial-copy light reveal"><p class="eyebrow">Weniger Ablenkung. Mehr Natur.</p><h2>Natürliche Schönheit.<br>Zeitlos schön.</h2><p>Weniger Überladung. Mehr Persönlichkeit. Wir schaffen eine Markenwelt für Menschen, denen Qualität, Inhaltsstoffe und eine glaubwürdige Haltung wichtig sind.</p></div>
+    </section>
+
+    <section class="audience section cream" aria-labelledby="audience-title">
+      <header class="section-heading reveal"><p class="eyebrow">Unsere Zielgruppe</p><h2 id="audience-title">Made for Your Glow.</h2><p>Unterschiedliche Bedürfnisse. Eine gemeinsame Haltung: bewusste Pflege und natürliche Ausstrahlung.</p></header>
+      <div class="audience-grid">
+        <article class="audience-card reveal"><img src="assets/skin-detail.png" alt="Junge Frau bei ihrer Pflegeroutine" loading="lazy"><div><span>01 · Digital & inspired</span><h3>The Everyday Glow</h3><p>Jüngere, digitalaffine Menschen, die Beauty-Trends, unkomplizierte Pflegeroutinen und inspirierenden Social-Media-Content entdecken möchten.</p></div></article>
+        <article class="audience-card reveal"><img src="assets/audience-conscious.png" alt="Sonnengeküsstes Wellness-Porträt einer erwachsenen Frau mit Blätterschatten" loading="lazy"><div><span>02 · Conscious & considered</span><h3>The Conscious Glow</h3><p>Qualitätsbewusste Menschen in mittleren Altersgruppen, die sich für Hautpflege, Inhaltsstoffe, Gesundheit und einen bewussten Lebensstil interessieren.</p></div></article>
+      </div>
+      <div class="goals reveal"><p class="eyebrow">Unsere Kommunikationsziele</p><div><span>Bekanntheit steigern</span><span>Vertrauen & Markenbild stärken</span><span>Interesse an der Website wecken</span><span>Langfristige Kundenbindung fördern</span></div></div>
+    </section>
+
+    <section class="strategy section" aria-labelledby="strategy-title">
+      <header class="section-heading reveal"><p class="eyebrow">The AloeGlow Concept</p><h2 id="strategy-title">The Strategy Behind the Glow.</h2><p>Four pillars. One vision.</p></header>
+      <div class="strategy-grid">
+        <article class="strategy-card reveal"><span>01 / Product</span><div class="strategy-thumb products-thumb"></div><h3>Natural Care</h3><p>Vier Aloe-Vera-inspirierte Pflegeprodukte in einer klaren, hochwertigen Markenwelt.</p></article>
+        <article class="strategy-card reveal"><span>02 / Price</span><div class="strategy-thumb skin"></div><h3>Accessible Luxury</h3><p>Qualitätsorientiert und zugleich zugänglich. Konkrete Verkaufspreise sind noch nicht festgelegt.</p></article>
+        <article class="strategy-card reveal"><span>03 / Place</span><div class="strategy-thumb serum"></div><h3>Wherever You Glow</h3><p>Heute online und in eigenen Filialen in Deutschland; perspektivisch Prüfung internationaler Märkte.</p></article>
+        <article class="strategy-card promotion reveal"><span>04 / Promotion</span><div class="strategy-thumb social"></div><h3>The Glow Movement</h3><p>Markenfilm, Instagram, Influencer-Content und persönliche Kommunikation verbinden sich.</p></article>
+      </div>
+      <p class="strategy-note reveal">Eine Idee <i></i> mehrere Kontaktpunkte.</p>
+    </section>
+
+    <section class="social section dark-section" id="kampagne" aria-labelledby="social-title">
+      <div class="social-copy reveal"><p class="eyebrow">Unsere Social-Media-Kampagne</p><h2 id="social-title">The Glow<br>Movement.</h2><p>Ein Film. Viele Geschichten. Mit Reels, Posts und Stories bringen wir AloeGlow dorthin, wo Menschen neue Pflegeideen entdecken.</p><button class="button button-light" data-social-first>Kampagne entdecken <span>→</span></button></div>
+      <div class="social-phone reveal" aria-label="AloeGlow Instagram-Profil">
+        <div class="phone-status"><span>9:41</span><i>● ●●</i></div>
+        <div class="ig-title"><b>aloeglow.de</b><span>•••</span></div>
+        <div class="ig-profile"><img src="assets/logo-dark.png" alt=""><div><b>24</b><small>Beiträge</small></div><div><b>18,4K</b><small>Follower</small></div><div><b>128</b><small>Gefolgt</small></div></div>
+        <div class="ig-bio"><b>AloeGlow</b><span>Natural care. Real glow.</span><small>Beauty · Wellness · Selfcare</small></div>
+        <div class="ig-highlights"><span><i>Ritual</i></span><span><i>Nature</i></span><span><i>Glow</i></span></div>
+        <div class="ig-grid"><img src="assets/product-group.png" alt=""><img src="assets/skin-detail.png" alt=""><img src="assets/aloe-macro.png" alt=""><img src="assets/product-serum.png" alt=""><img src="assets/pamela.png" alt=""><img src="assets/audience-conscious.png" alt=""></div>
+      </div>
+      <div class="social-grid" aria-label="Social-Media-Beispiele">
+        <button class="social-card reveal" data-social="ritual"><img src="assets/skin-detail.png" alt=""><span>Reel · 00:15</span><h3>The Glow Ritual</h3><p>Dein Moment. Deine Routine. Dein Glow.</p></button>
+        <button class="social-card reveal" data-social="essentials"><img src="assets/serum.png" alt=""><span>Post</span><h3>AloeGlow Essentials</h3><p>Vier Produkte. Ein natürliches Gefühl.</p></button>
+        <button class="social-card reveal" data-social="behind"><img src="assets/pamela.png" alt=""><span>Story</span><h3>Behind the Glow</h3><p>Ein Blick hinter unsere Kampagne.</p></button>
+        <button class="social-card reveal" data-social="nature"><img src="assets/aloe-macro.png" alt=""><span>Post</span><h3>Nature in Every Detail</h3><p>Inspiriert von der Aloe Vera.</p></button>
+      </div>
+    </section>
+
+    <section class="influencer section cream" aria-labelledby="influencer-title">
+      <div class="influencer-image reveal"><img src="assets/pamela.png" alt="Fitness- und Beauty-Inszenierung mit AloeGlow-Produkten" loading="lazy"><span>Fitness · Balance · Selfcare</span></div>
+      <div class="influencer-copy reveal"><p class="eyebrow">Influencer-Kampagnenidee</p><h2 id="influencer-title">Pamela Reif<br><i>×</i> AloeGlow.</h2><p class="subline">Fitness. Balance. Selfcare.</p><p>Unsere Kooperationsidee verbindet die Welt von Fitness, Gesundheit und bewussten Routinen mit dem natürlichen Markenbild von AloeGlow. Ein kurzes Reel könnte AloeGlow als Teil eines persönlichen Selfcare-Moments inszenieren.</p><ul><li>Themenfit</li><li>Deutschsprachige Zielgruppenansprache</li><li>Authentischer Lifestyle-Kontext</li></ul><p class="disclaimer">Kreative Markenstudie – keine tatsächliche Kooperation oder Empfehlung durch Pamela Reif.</p></div>
+      <div class="reel-placeholder reveal"><div class="phone-frame"><video src="assets/pamela-reel.mp4" poster="assets/pamela.png" controls playsinline preload="metadata" aria-label="Pamela-Reif-Kooperationsidee als Reel"></video><span class="video-label">AloeGlow reel · 9:16</span></div></div>
+    </section>
+
+    <section class="film" aria-labelledby="film-title">
+      <img class="film-bg" src="assets/product-group.png" alt="" loading="lazy"><div class="film-overlay"></div>
+      <div class="film-copy reveal"><p class="eyebrow">Unser Werbespot</p><h2 id="film-title">Experience<br>the Glow.</h2><p>30 Sekunden, die AloeGlow erlebbar machen – natürlich, emotional und unverwechselbar.</p><button class="button button-light" data-film>Film ansehen <span>▶</span></button></div>
+      <button class="film-poster reveal" data-film aria-label="AloeGlow Werbespot öffnen"><video src="assets/main-film.mp4" muted playsinline preload="metadata" aria-hidden="true"></video><span class="play">▶</span><small>Brand film · Fullscreen</small></button>
+    </section>
+
+    <section class="halloween" aria-labelledby="halloween-title">
+      <img src="assets/halloween.png" alt="AloeGlow Cleanser in einem geheimnisvollen, grün leuchtenden Wald" loading="lazy"><div class="halloween-overlay"></div>
+      <div class="halloween-copy reveal"><p class="eyebrow">Halloween Special</p><h2 id="halloween-title">The Haunted<br>Glow.</h2><p class="subline">Jetzt auch in der Halloween-Edition.</p><p>Ein Glow mit Gänsehaut. Für Halloween zeigen wir AloeGlow von seiner geheimnisvollen Seite – mit leuchtenden Akzenten, dunkler Ästhetik und einem Hauch Magie.</p><button class="button ghost" data-halloween>Halloween Special entdecken <span>→</span></button></div>
+    </section>
+
+    <section class="impact section cream" aria-labelledby="impact-title">
+      <header class="section-heading reveal"><p class="eyebrow">Our Impact</p><h2 id="impact-title">Wirkung messbar machen.</h2><p>Gute Kommunikation soll nicht nur gefallen. Wir möchten nachvollziehen, wie unsere Kampagne Aufmerksamkeit schafft, Interesse auslöst und Menschen mit AloeGlow in Kontakt bringt.</p></header>
+      <div class="impact-grid"><article class="reveal"><span>01</span><h3>Reichweite</h3><p>Impressionen und Videoaufrufe</p></article><article class="reveal"><span>02</span><h3>Interaktionen</h3><p>Likes, Saves, Shares und Kommentare</p></article><article class="reveal"><span>03</span><h3>Website-Interesse</h3><p>Klickrate und Besuche</p></article><article class="reveal"><span>04</span><h3>E-Mail-Interesse</h3><p>Anmeldungen und E-Mail-Interaktionen</p></article></div>
+      <p class="impact-note reveal">Geplante KPIs – keine bereits gemessenen Kampagnenergebnisse.</p>
+    </section>
+
+    <section class="newsletter section" id="kontakt" aria-labelledby="newsletter-title">
+      <div class="newsletter-bg"></div><div class="newsletter-copy reveal"><p class="eyebrow">E-Mail Marketing</p><h2 id="newsletter-title">Stay in the Glow.</h2><p class="subline">Entdecke deine natürliche Schönheit.</p><p>Ein guter Kontakt endet nicht nach einem Reel. Unsere E-Mail-Kommunikation setzt den Dialog mit persönlichen Beauty-Inspirationen und Einblicken in die AloeGlow-Welt fort.</p>
+        <form id="email-form" novalidate><label for="email">Deine E-Mail-Adresse</label><div><input id="email" name="email" type="email" placeholder="name@beispiel.de" autocomplete="email" required><button class="button" type="submit">E-Mail ansehen <span>→</span></button></div><p class="form-error" aria-live="polite"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-brand"><img src="assets/logo-dark.png" alt="AloeGlow"><p>Your Natural Glow.</p></div><div><h2>Produkte</h2><a href="#produkte">Pflegewelt</a><a href="#inhaltsstoffe">Inhaltsstoffe</a></div><div><h2>Unsere Marke</h2><a href="#philosophie">Philosophie</a><a href="#top">Startseite</a></div><div><h2>Kampagne</h2><a href="#kampagne">The Glow Movement</a><a href="#kontakt">E-Mail</a></div><div class="footer-bottom"><p>Eine kreative Markenstudie für AloeGlow. Produkte und Kampagnendarstellungen dienen der visuellen Präsentation.</p><nav aria-label="Rechtliche Hinweise"><button data-legal="imprint">Impressum</button><button data-legal="privacy">Datenschutz</button><button data-legal="contact">Kontakt</button><a href="#top">Nach oben ↑</a></nav></div></footer>
+
+  <dialog id="content-dialog"><button class="dialog-close" aria-label="Dialog schließen">×</button><div id="dialog-body"></div></dialog>
+</body>
+</html>
